@@ -85,3 +85,8 @@ const getSongsThatisHit = (songs) =>
   songs.filter((song) => song.isHit === true).length;
 
 getSongsThatisHit(songs);
+
+const getSongOrderByYear = (songs) =>
+  songs.sort((songA, songB) => songB.year - songA.year);
+
+getSongOrderByYear(songs);
