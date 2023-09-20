@@ -75,3 +75,8 @@ deleteTitle("Gin And Juice");
 const handBackSongByTitle = (title) =>
   songs.filter((song) => song.title === title);
 handBackSongByTitle("Is This It");
+
+const getSongsByGenre = (songs, genre) =>
+  songs.filter((song) => song.genre === genre);
+
+getSongsByGenre(songs, "Rock");
