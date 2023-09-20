@@ -99,3 +99,17 @@ const getSongByNames = (songs) => {
   return songs.map((song) => song.title);
 };
 getSongByNames(songs);
+
+const getAverageSongDuration = () => {
+  let sum = 0;
+
+  songs.forEach((song) => {
+    sum += song.duration;
+  });
+
+  const averageSongDuration = sum / songs.length;
+
+  return averageSongDuration;
+};
+
+const averageSongDuration = getAverageSongDuration(songs);
