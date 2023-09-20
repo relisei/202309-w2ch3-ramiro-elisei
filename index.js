@@ -80,3 +80,8 @@ const getSongsByGenre = (songs, genre) =>
   songs.filter((song) => song.genre === genre);
 
 getSongsByGenre(songs, "Rock");
+
+const getSongsThatisHit = (songs) =>
+  songs.filter((song) => song.isHit === true).length;
+
+getSongsThatisHit(songs);
