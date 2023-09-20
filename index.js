@@ -86,7 +86,16 @@ const getSongsThatisHit = (songs) =>
 
 getSongsThatisHit(songs);
 
-const getSongOrderByYear = (songs) =>
-  songs.sort((songA, songB) => songB.year - songA.year);
+const getSongOrderByYear = (songs) => {
+  const sortedSongsByYear = songs.sort(
+    (songA, songB) => songB.year - songA.year
+  );
+  return sortedSongsByYear;
+};
 
 getSongOrderByYear(songs);
+
+const getSongByNames = (songs) => {
+  return songs.map((song) => song.title);
+};
+getSongByNames(songs);
