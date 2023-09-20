@@ -71,3 +71,7 @@ addSong(newSong);
 
 const deleteTitle = (title) => songs.filter((song) => song.title !== title);
 deleteTitle("Gin And Juice");
+
+const handBackSongByTitle = (title) =>
+  songs.filter((song) => song.title === title);
+handBackSongByTitle("Is This It");
