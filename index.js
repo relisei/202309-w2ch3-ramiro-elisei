@@ -68,3 +68,6 @@ const newSong = {
 const addSong = (song) => songs.push(song);
 
 addSong(newSong);
+
+const deleteTitle = (title) => songs.filter((song) => song.title !== title);
+deleteTitle("Gin And Juice");
